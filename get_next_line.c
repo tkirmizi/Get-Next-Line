@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkirmizi <tkirmizi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: taha <taha@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 16:05:49 by tkirmizi          #+#    #+#             */
-/*   Updated: 2024/04/20 12:45:36 by tkirmizi         ###   ########.fr       */
+/*   Updated: 2024/06/17 00:06:44 by taha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*get_next_line(int fd)
 	buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buffer)
 		return (NULL);
-	final_line = line_filler(fd, previous, buffer); // trassiz hali \n'e kadar kisltilacak
+	final_line = line_filler(fd, previous, buffer);
 	free(buffer);
 	if (!final_line)
 		return (NULL);
@@ -107,22 +107,3 @@ static char	*ft_strchr(const char *s, int c)
 		return ((char *) &s[i]);
 	return (NULL);
 }
-
-// int	main()
-// {
-// 	atexit(&leaks);
-// 	int	fd;
-// 	char	*str;
-// 	char	*str2;
-// 	char	*str3;
-
-// 	fd = open("/Users/taha/42desktop/42projects/get_next_line_dumen/sample.txt", O_RDONLY);
-// 	printf("%d\n", fd);
-// 	str = get_next_line(fd);
-// 	while (str != NULL)
-// 	{
-// 		printf("%s", str);
-// 		free(str);
-// 		str = get_next_line(fd);
-// 	}
-// }

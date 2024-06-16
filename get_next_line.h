@@ -6,7 +6,7 @@
 /*   By: taha <taha@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 16:01:25 by tkirmizi          #+#    #+#             */
-/*   Updated: 2024/04/19 23:54:22 by taha             ###   ########.fr       */
+/*   Updated: 2024/06/17 00:06:51 by taha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include <stdio.h> // Sonradan silecegim
 
 char	*get_next_line(int fd);
 char	*ft_strdup(const char *s);
