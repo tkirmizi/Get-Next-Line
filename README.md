@@ -1,4 +1,5 @@
 # Get-Next-Line
+![Uploading Screenshot 2024-10-25 at 15.36.22.png…]()
 
 The "Get Next Line" (GNL) function is a utility used in C programming for reading text input from a file or a file descriptor, such as standard input or a file. It reads the input line by line, where each line is terminated by a newline character ('\n'). The function returns a pointer to a dynamically allocated string containing the contents of the next line read from the input stream.
 
